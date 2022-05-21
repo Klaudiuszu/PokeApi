@@ -1,0 +1,116 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  cursor: url("../App/cursor/Pokemon-Windows/Default.cur"), auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 100vh;
+}
+
+.box {
+  position: relative;
+  min-width: 300px;
+  height: 400px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.288);
+  border-radius: 23px;
+  flex-direction: column;
+  color: white;
+  margin: 15px;
+  overflow: hidden;
+  
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .klicked-Ball {
+    width: 50px;
+    height: 50px;
+  }
+
+  .pokemon-name {
+    margin-bottom: 5px;
+    font-size: 2rem;
+  }
+  
+  .skill {
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.555);
+  }
+}
+
+// ball code
+
+.pokeBall-container {
+position: absolute;
+width: 50px;
+height: 50px;
+bottom: 5px;
+right: 5px;
+transition: all .4s;
+cursor: url("../App/cursor/Pokemon-Windows/Link.cur"), auto;
+}
+
+.cancel {
+position: absolute;
+width: 50px;
+height: 50px;
+bottom: 5px;
+right: 5px;
+transition: all .4s;
+cursor: url("../App/cursor/Pokemon-Windows/Link.cur"), auto;
+}
+
+
+
+.pokeBall-active {
+  transform: translate(90%, 90%);
+}
+
+.klicked-Ball {
+  transition: 0.2s;
+}
+
+.klicked-Ball:hover {
+  transform: rotate(180deg); 
+  transition: 0.2s;
+}
+
+.left-container {
+  position: absolute;
+  background: #0f2027;
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
+  padding: 40px 0 0 20px;
+  
+  p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+
+  .attributes div {
+    display: inline-block;
+    border: 1px solid rgb(155, 155, 155);
+    color: rgb(155, 155, 155);
+    padding: 5px 10px;
+    font-size: .9rem;
+    margin: 10px 10px 10px 0;
+  }
+} 
+
